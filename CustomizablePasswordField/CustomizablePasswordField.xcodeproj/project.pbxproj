@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		2F5D130622905A59008B52FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D130522905A59008B52FA /* AppDelegate.swift */; };
-		2F5D130822905A59008B52FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D130722905A59008B52FA /* ViewController.swift */; };
 		2F5D130D22905A5B008B52FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F5D130C22905A5B008B52FA /* Assets.xcassets */; };
 		2F5D131022905A5B008B52FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5D130E22905A5B008B52FA /* LaunchScreen.storyboard */; };
+		2F5D131C22907993008B52FA /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D131B22907993008B52FA /* PasscodeViewController.swift */; };
+		2F5D131E229079DC008B52FA /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D131D229079DC008B52FA /* PasscodeView.swift */; };
+		2F5D132022907B81008B52FA /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D131F22907B81008B52FA /* PinView.swift */; };
+		2F5D132422907D77008B52FA /* CircularPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D132322907D77008B52FA /* CircularPinView.swift */; };
+		2F5D132622908C42008B52FA /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D132522908C42008B52FA /* CustomNavigationController.swift */; };
+		2F5D132922908D24008B52FA /* UIColorX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D132822908D24008B52FA /* UIColorX.swift */; };
+		2F5D132C229142C2008B52FA /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D132B229142C2008B52FA /* Configurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F5D130222905A59008B52FA /* CustomizablePasswordField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomizablePasswordField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F5D130522905A59008B52FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F5D130722905A59008B52FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F5D130C22905A5B008B52FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F5D130F22905A5B008B52FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F5D131122905A5B008B52FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5D131B22907993008B52FA /* PasscodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		2F5D131D229079DC008B52FA /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		2F5D131F22907B81008B52FA /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		2F5D132322907D77008B52FA /* CircularPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularPinView.swift; sourceTree = "<group>"; };
+		2F5D132522908C42008B52FA /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		2F5D132822908D24008B52FA /* UIColorX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorX.swift; sourceTree = "<group>"; };
+		2F5D132B229142C2008B52FA /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +64,59 @@
 		2F5D130422905A59008B52FA /* CustomizablePasswordField */ = {
 			isa = PBXGroup;
 			children = (
+				2F5D132A229142A0008B52FA /* Configurations */,
+				2F5D132722908D16008B52FA /* Extensions */,
+				2F5D131822907993008B52FA /* Views */,
 				2F5D130522905A59008B52FA /* AppDelegate.swift */,
-				2F5D130722905A59008B52FA /* ViewController.swift */,
 				2F5D130C22905A5B008B52FA /* Assets.xcassets */,
 				2F5D130E22905A5B008B52FA /* LaunchScreen.storyboard */,
 				2F5D131122905A5B008B52FA /* Info.plist */,
 			);
 			path = CustomizablePasswordField;
+			sourceTree = "<group>";
+		};
+		2F5D131822907993008B52FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D131922907993008B52FA /* CustomViews */,
+				2F5D131A22907993008B52FA /* ViewControllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F5D131922907993008B52FA /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D131D229079DC008B52FA /* PasscodeView.swift */,
+				2F5D131F22907B81008B52FA /* PinView.swift */,
+				2F5D132322907D77008B52FA /* CircularPinView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2F5D131A22907993008B52FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D131B22907993008B52FA /* PasscodeViewController.swift */,
+				2F5D132522908C42008B52FA /* CustomNavigationController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F5D132722908D16008B52FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D132822908D24008B52FA /* UIColorX.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F5D132A229142A0008B52FA /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2F5D132B229142C2008B52FA /* Configurations.swift */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F5D130822905A59008B52FA /* ViewController.swift in Sources */,
+				2F5D131E229079DC008B52FA /* PasscodeView.swift in Sources */,
+				2F5D131C22907993008B52FA /* PasscodeViewController.swift in Sources */,
+				2F5D132C229142C2008B52FA /* Configurations.swift in Sources */,
+				2F5D132022907B81008B52FA /* PinView.swift in Sources */,
+				2F5D132422907D77008B52FA /* CircularPinView.swift in Sources */,
 				2F5D130622905A59008B52FA /* AppDelegate.swift in Sources */,
+				2F5D132922908D24008B52FA /* UIColorX.swift in Sources */,
+				2F5D132622908C42008B52FA /* CustomNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vijaygodse.CustomizablePasswordField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vijaygodse.CustomizablePasswordField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

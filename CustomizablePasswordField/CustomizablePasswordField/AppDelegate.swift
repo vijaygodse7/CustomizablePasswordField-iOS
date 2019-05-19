@@ -46,8 +46,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //Function to set initial view controller as no xib/storyboards are used in this app
     private func setInitialViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
+        let navController = CustomNavigationController()
+        navController.viewControllers = [PasswordViewController()]
+        self.window?.rootViewController = navController
+        self.window?.makeKeyAndVisible()
     }
 
 }
