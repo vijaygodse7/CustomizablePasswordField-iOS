@@ -31,12 +31,19 @@ class PinView: UIView, PinViewConfigurable {
     }
     
     private func setup() {
-        translatesAutoresizingMaskIntoConstraints = false
-        widthAnchor.constraint(equalToConstant: PinViewConstraintConstants.pinViewWidth).isActive = true
-        heightAnchor.constraint(equalToConstant: PinViewConstraintConstants.pinViewHeight).isActive = true
-        
+        addConstraintForPinView()
+        addConstraintForCircularPinView()
+    }
+    
+    private func addConstraintForPinView() {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalToConstant: PinViewConstraintConstants.pinViewWidth).isActive = true
+        self.heightAnchor.constraint(equalToConstant: PinViewConstraintConstants.pinViewHeight).isActive = true
+    }
+    
+    //Adding indicator on pin view and setting corrsponding constraints
+    private func addConstraintForCircularPinView() {
         addSubview(circularPinView)
-
         circularPinView.translatesAutoresizingMaskIntoConstraints = false
         circularPinView.widthAnchor.constraint(equalToConstant: PinViewConstraintConstants.pinIndicatorWidth).isActive = true
         circularPinView.heightAnchor.constraint(equalToConstant: PinViewConstraintConstants.pinIndicatorHeight).isActive = true

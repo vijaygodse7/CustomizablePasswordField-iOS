@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CustomizablePasswordField
+
+  Created by Vijay Godse on 5/20/19.
+  
+*/
+
+"passwordVC.title" = "Set PIN";
+"passwordVC.labelDesc" = "Please enter %@-alphanumeric character pin. PIN helps you to login to Application";

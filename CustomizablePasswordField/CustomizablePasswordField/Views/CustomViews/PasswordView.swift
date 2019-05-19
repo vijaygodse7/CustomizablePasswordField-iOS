@@ -49,6 +49,13 @@ public class PasswordView: UIView {
         setup()
     }
     
+    public func updateNavigationBarColor(barTintColor: UIColor, titleColor: UIColor) {
+        if let topController = UIApplication.topViewController(), let navigationController = topController.navigationController {
+            navigationController.navigationBar.barTintColor = barTintColor
+            navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor]
+        }
+    }
+    
     private func setup() {
         if (contentView == nil) {
             
@@ -80,11 +87,8 @@ extension PasswordView: PasswordConfigurable {
         passwordStackView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         passwordStackView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         
-//        guard 0..<length ~= customSpacingPosition else { return }
         passwordStackView.distribution = .fillEqually
         passwordStackView.alignment = .center
-//        passwordStackView.setCustomSpacing(CGFloat(customSpacing),
-//                                           after: passwordStackView.arrangedSubviews[customSpacingPosition])
     }
     
     private var placeHolderViews: [PinView] {

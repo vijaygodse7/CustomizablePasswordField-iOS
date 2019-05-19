@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // Pin Appreance Defaults
-private var font                 = UIFont.systemFont(ofSize: 20)
+private var font                 = UIFont.systemFont(ofSize: 20, weight: .medium)
 private var fontColor            = UIColor.black
 private var borderColor          = UIColor.clear.cgColor
 private var fillColor            = UIColor.pinSelected
